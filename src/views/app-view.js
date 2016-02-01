@@ -10,10 +10,8 @@ var app = app || {};
 
             appViewTemplate: _.template($('#appview-template').html()),
 
-            helpTemplate: _.template($('#help-template').html()),
-
             initialize: function () {
-                    this.$el.find('.content').append(this.appViewTemplate);
+                    this.$el.find('#content').append(this.appViewTemplate);
                     
             },
 
@@ -39,6 +37,6 @@ var app = app || {};
             }
 
 	});
-})(jQuery);
+}) (jQuery);
 
 

@@ -7,7 +7,12 @@
 <body>
 	<div><h1>Welcome to Trello like</h1></div>
 
-	<script type="text/template" id="app-view-template"></script>
+	<script type="text/template" id="appview-template">
+        <div id="appView">
+            <div id="toolbar">toolbar</div>
+            <div id="content">content</div>
+        </div>
+    </script>
 	<script type="text/template" id="board-template"></script>
 	<script type="text/template" id="task-list-template"></script>
 	<script type="text/template" id="task-template"></script>
@@ -20,14 +25,14 @@
     <script src="src/models/board.js"></script>
     <script src="src/models/task.js"></script>
     <script src="src/models/task-list.js"></script>
-    <script src="src/collection/boards.js"></script>
-    <script src="src/collection/tasks.js"></script>
-    <script src="src/collection/task-lists.js"></script>
+    <script src="src/collections/boards.js"></script>
+    <script src="src/collections/tasks.js"></script>
+    <script src="src/collections/task-lists.js"></script>
     <script src="src/views/task-view.js"></script>
     <script src="src/views/board-view.js"></script>
     <script src="src/views/task-list-view.js"></script>
     <script src="src/views/app-view.js"></script>
-    <script src="src/routers/router.js"></script>
-    <script src="src/app.js"></script>
+    <script src="src/routes/router.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
